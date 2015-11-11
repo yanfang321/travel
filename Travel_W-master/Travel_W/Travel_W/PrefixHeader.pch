@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  Travel_W
+//
+//  Created by WM on 15/9/19.
+//  Copyright (c) 2015年 WM. All rights reserved.
+//
+
+#ifndef Travel_W_PrefixHeader_pch
+#define Travel_W_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "Utilities.h"
+#import "storageMgr.h"
+#import "AFHTTPRequestOperationManager.h"
+#import "Constants.h"
+#import "MJRefreshHeaderView.h"
+#import "MJRefreshFooterView.h"
+#define  RESIONURL @"http://ly.coderss.cn/index.php?m=Cwl&a=selectregion&parent_id=%d&page=%@&isPage=%d"
+#define VIEWADVICEURL @"http://ly.coderss.cn/index.php?m=Cwl&a=showAdvice&ViewId=%@&page=%@"//景点评论
+#define USERADVICEVIEWURL @"http://ly.coderss.cn/index.php?m=Cwl&a=AdviceToView"//用户评论景点
+#define USERADVICETUANURL @"http://ly.coderss.cn/index.php?m=Cwl&a=AdviceToTuan"//用户评论旅游路线
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#endif
